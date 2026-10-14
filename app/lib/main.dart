@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+
+import 'pages/main_page.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -13,8 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Minha Agenda',
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: const HomePage(),
+      home: const MainPage(),
     );
   }
 }
